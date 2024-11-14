@@ -1,0 +1,76 @@
+<div class="container-fluid hero-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-15">
+                <div class="hero-header-inner animated zoomIn">
+                    <p class="fs-4 text-dark" style="direction: rtl; text-align: center; ">بسم الله الرحمان الرحيم</p>
+                    <h1 class="display-1 mb-5 text-dark" style="font-size: 3.5rem; direction: rtl; text-align: center;">"إِنَّ الصَّلاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا مَّوْقُوتًا" </h1>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+     
+
+<div class="container">
+   
+
+    <div class="col-xl-14 wow fadeIn" data-wow-delay="0.5s" style="direction: rtl; text-align: center;">
+    
+        <h1 class="display-5 pb-4 m-0 ">التَّارِيخُ الهِجـــــرِيُّ: {{ hijriDate }}</h1>
+        <h1 class="display-5 pb-4 m-0 ">التَّارِيخُ الميـــــلادِيُّ: {{ gregorianDate }}</h1>
+
+          
+
+
+    </div>
+
+
+   
+
+
+      
+     
+     
+
+       
+   
+    <div class="governorate-select-container">
+        <label for="governorate"> :اختر الولايــــة</label> <!-- Label en arabe -->
+        <select id="governorate" [(ngModel)]="selectedGovernorate" (change)="onGovernorateChange()">
+          <option *ngFor="let governorate of governorates" [value]="governorate">{{ governorate }}</option>
+        </select>
+      </div>
+      
+
+  <div *ngIf="todayPrayer">
+   
+    <div class="prayer-card">
+      <div class="prayer-card-header">
+        <h5>مواقيت الصــــــــــــــــلاة</h5>
+      </div>
+      <div class="prayer-card-body">
+        <div class="prayer-time-box">
+          <span>الفــــجر: {{ todayPrayer.timings.Fajr }}</span>
+        </div>
+        <div class="prayer-time-box">
+          <span>الظــــهر: {{ todayPrayer.timings.Dhuhr }}</span>
+        </div>
+        <div class="prayer-time-box">
+          <span>العصــــر: {{ todayPrayer.timings.Asr }}</span>
+        </div>
+        <div class="prayer-time-box">
+          <span>المــــغرب: {{ todayPrayer.timings.Maghrib }}</span>
+        </div>
+        <div class="prayer-time-box">
+          <span>العشــــاء: {{ todayPrayer.timings.Isha }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+ 

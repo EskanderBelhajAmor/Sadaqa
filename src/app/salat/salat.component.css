@@ -1,0 +1,101 @@
+/* Carte principale avec un fond jaune */
+.prayer-card {
+    background-color: #F0C052;  /* Carte jaune */
+    border-radius: 12px;         /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    width: 100%;                 /* Largeur pleine */
+    max-width: 350px;            /* Largeur maximale de la carte */
+    margin: 0 auto;              /* Centrer la carte */
+    padding: 20px;
+    text-align: center;          /* Centrer le texte */
+  }
+  
+  /* Header de la carte */
+  .prayer-card-header {
+    background-color: #f7c12d;  /* Fond plus foncé pour le header */
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+  }
+  
+  .prayer-card-header h5 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Corps de la carte avec les horaires de prière */
+  .prayer-card-body {
+    padding-top: 15px;
+  }
+  
+  /* Boîtes des horaires de prière */
+  .prayer-time-box {
+    background-color: white;     /* Fond blanc */
+    padding: 15px;               /* Padding pour l'espace interne */
+    border-radius: 8px;          /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    margin-bottom: 15px;         /* Espacement entre les boîtes */
+    text-align: center;          /* Centrer le texte */
+    font-size: 18px;             /* Taille de police */
+    color: #000000;                 /* Couleur du texte */
+  }
+  
+  /* Mettre en gras les heures */
+  .prayer-time-box span {
+    font-weight: bold;
+    color: #555;                 /* Couleur du texte */
+  }
+  
+  /* Style responsive */
+  @media (max-width: 768px) {
+    .prayer-card {
+      max-width: 90%; /* Ajuste la largeur de la carte sur petits écrans */
+    }
+  }
+  
+
+
+
+  /* Conteneur du select */
+.governorate-select-container {
+    max-width: 500px;      /* Limite la largeur du conteneur */
+    width: 100%;           /* Prend toute la largeur disponible dans son conteneur parent */
+    margin: 20px auto;     /* Centrer le conteneur horizontalement et avec un espacement vertical */
+    text-align: center;    /* Centrer le texte à l'intérieur du conteneur */
+  }
+  
+  /* Style du label */
+  .governorate-select-container label {
+    display: block;        /* Affichage du label en bloc */
+    font-size: 18px;       /* Taille du texte du label */
+    color: #333;           /* Couleur du texte */
+    margin-bottom: 10px;   /* Espacement sous le label */
+  }
+  
+  /* Style du select */
+  .governorate-select-container select {
+    font-size: 18px;               /* Taille de police plus grande */
+    padding: 15px 20px;            /* Padding pour rendre le select plus grand */
+    background-color: #fff;       /* Fond blanc */
+    border: 2px solid #f7c12d;    /* Bordure de couleur jaune */
+    border-radius: 8px;            /* Coins arrondis */
+    width: 100%;                   /* Utiliser toute la largeur disponible */
+    max-width: 400px;              /* Limiter la largeur maximale du select */
+    margin: 0 auto;                /* Centrer horizontalement */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    transition: all 0.3s ease;     /* Effet de transition pour les interactions */
+  }
+  
+  /* Focus sur le select (lorsqu'il est sélectionné) */
+  .governorate-select-container select:focus {
+    outline: none;                /* Enlever le contour par défaut */
+    border-color: #f8d847;        /* Couleur de la bordure au focus */
+    box-shadow: 0 0 8px rgba(255, 203, 47, 0.6); /* Ombre au focus */
+  }
+  
+
+
+
+
