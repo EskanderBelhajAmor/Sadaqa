@@ -1,0 +1,7 @@
+<div class="surahs-list">
+    <div *ngFor="let surah of surahs | keyvalue">
+      <h4>{{ surah.value }}</h4>
+      <button (click)="playAudio(surah.key, 1)">Lire le premier verset</button>
+    </div>
+  </div>
+  

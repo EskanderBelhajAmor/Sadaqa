@@ -1,0 +1,113 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Descend le conteneur vers le bas */
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  background: #fffbe6; /* Couleur de fond jaune pâle */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Ombre élégante */
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Laisse un espace au bas */
+}
+
+/* Card Header */
+.card-header {
+  background: #F0C052; /* Jaune vif pour l'en-tête */
+  color: #333333;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  font-size: 1.2rem;
+}
+
+/* Grid System */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.col-lg-4,
+.col-lg-12 {
+  padding: 10px;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+}
+
+.col-lg-12 {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+/* Fieldset Style */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555555;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #F0C052; /* Bordure jaune */
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333333;
+  background: #fff8dc; /* Fond clair */
+  appearance: none;
+  cursor: pointer;
+}
+
+select:focus {
+  border-color: #F0C052; /* Jaune orangé au focus */
+  outline: none;
+  background: #ffffff;
+}
+
+/* Audio Player */
+audio {
+  width: 100%;
+  border: 1px solid #F0C052; /* Bordure jaune */
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .col-lg-4 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  select {
+    font-size: 0.9rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+}
