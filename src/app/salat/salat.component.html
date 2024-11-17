@@ -39,7 +39,7 @@
        
    
     <div class="governorate-select-container">
-        <label for="governorate"> :اختر الولايــــة</label> <!-- Label en arabe -->
+        <label for="governorate"> :اختر الولايــــة</label> 
         <select id="governorate" [(ngModel)]="selectedGovernorate" (change)="onGovernorateChange()">
           <option *ngFor="let governorate of governorates" [value]="governorate">{{ governorate }}</option>
         </select>

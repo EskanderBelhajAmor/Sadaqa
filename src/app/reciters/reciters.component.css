@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
   font-family: 'Arial', sans-serif;
   background: #f9f9f9;
@@ -6,24 +6,24 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: flex-end; /* Descend le conteneur vers le bas */
+  align-items: flex-end; 
   min-height: 100vh;
 }
 
 .container {
   width: 90%;
   max-width: 800px;
-  background: #fffbe6; /* Couleur de fond jaune pâle */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Ombre élégante */
+  background: #fffbe6; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 20px;
   box-sizing: border-box;
-  margin-bottom: 20px; /* Laisse un espace au bas */
+  margin-bottom: 20px; 
 }
 
-/* Card Header */
+
 .card-header {
-  background: #F0C052; /* Jaune vif pour l'en-tête */
+  background: #F0C052; 
   color: #333333;
   font-weight: bold;
   padding: 10px;
@@ -32,7 +32,6 @@ body {
   font-size: 1.2rem;
 }
 
-/* Grid System */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -51,7 +50,7 @@ body {
   max-width: 100%;
 }
 
-/* Fieldset Style */
+
 fieldset {
   border: none;
   margin: 0;
@@ -68,29 +67,29 @@ label {
 select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #F0C052; /* Bordure jaune */
+  border: 1px solid #F0C052; 
   border-radius: 5px;
   font-size: 1rem;
   color: #333333;
-  background: #fff8dc; /* Fond clair */
+  background: #fff8dc; 
   appearance: none;
   cursor: pointer;
 }
 
 select:focus {
-  border-color: #F0C052; /* Jaune orangé au focus */
+  border-color: #F0C052; 
   outline: none;
   background: #ffffff;
 }
 
-/* Audio Player */
+
 audio {
   width: 100%;
-  border: 1px solid #F0C052; /* Bordure jaune */
+  border: 1px solid #F0C052; 
   border-radius: 5px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .col-lg-4 {
     flex: 1 1 100%;

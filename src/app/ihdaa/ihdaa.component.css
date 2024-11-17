@@ -1,27 +1,27 @@
 .container {
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* Alignement en bas */
+    align-items: flex-end; 
     height: 100vh;
     background-color: #ffffff;
-    padding-bottom: 50px; /* Ajout d'un espacement en bas */
+    padding-bottom: 50px; 
     margin-top: 3%;
   }
   
   .acknowledgment {
-    direction: rtl; /* De droite à gauche */
-    text-align: center; /* Centré */
-    font-family: 'Arial', sans-serif; /* Police de caractères */
-    font-size: 1.2em; /* Taille de la police plus grande */
-    line-height: 1.6; /* Hauteur de ligne pour lisibilité */
-    margin: 20px; /* Marges autour du bloc */
-    padding: 20px; /* Espacement interne */
-    border: 2px solid #ccc; /* Bordure */
-    border-radius: 10px; /* Bordure arrondie */
-    background-color: #f9f9f9; /* Couleur de fond */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre */
+    direction: rtl; 
+    text-align: center; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.2em; 
+    line-height: 1.6; 
+    margin: 20px; 
+    padding: 20px; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   }
   
   .acknowledgment p {
-    margin-bottom: 15px; /* Espacement entre les paragraphes */
+    margin-bottom: 15px; 
   }

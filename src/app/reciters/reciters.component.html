@@ -18,17 +18,17 @@
   <div class="row">
 
 
-
-
     <div class="col-lg-4">
       <fieldset>
-        <label for="chooseSurah" class="form-label" style="direction: rtl; text-align: center;">اختر السورة</label>
-        <select id="chooseSurah" class="form-select" (change)="playSurah($event)">
-          <option value="" style="direction: rtl; text-align: center;">اختر السورة</option>
-          <option *ngFor="let surah of surahNames" [value]="surah.url">{{ surah.name }}</option>
+        <label for="chooseReciter" class="form-label" style="direction: rtl; text-align: center;">اختر قارئ</label>
+        <select id="chooseReciter" class="form-select" (change)="loadMoshafs($event)">
+          <option value="" style="direction: rtl; text-align: center;">اختر قارئ</option>
+          <option *ngFor="let reciter of reciters" [value]="reciter.id">{{ reciter.name }}</option>
         </select>
       </fieldset>
     </div>
+
+
 
 
 
@@ -54,13 +54,15 @@
 
     <div class="col-lg-4">
       <fieldset>
-        <label for="chooseReciter" class="form-label" style="direction: rtl; text-align: center;">اختر قارئ</label>
-        <select id="chooseReciter" class="form-select" (change)="loadMoshafs($event)">
-          <option value="" style="direction: rtl; text-align: center;">اختر قارئ</option>
-          <option *ngFor="let reciter of reciters" [value]="reciter.id">{{ reciter.name }}</option>
+        <label for="chooseSurah" class="form-label" style="direction: rtl; text-align: center;">اختر السورة</label>
+        <select id="chooseSurah" class="form-select" (change)="playSurah($event)">
+          <option value="" style="direction: rtl; text-align: center;">اختر السورة</option>
+          <option *ngFor="let surah of surahNames" [value]="surah.url">{{ surah.name }}</option>
         </select>
       </fieldset>
     </div>
+
+
 
 
 

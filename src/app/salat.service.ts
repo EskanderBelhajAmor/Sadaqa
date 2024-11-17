@@ -11,15 +11,15 @@ export class SalatService {
   constructor(private http: HttpClient) {}
 
   getPrayerTimes(city: string, month: number, year: number): Observable<any> {
-    // Configuration des paramètres pour la requête HTTP
+    
     const params = new HttpParams()
       .set('city', city)
       .set('country', 'Tunisia')
       .set('month', month.toString())
       .set('year', year.toString())
-      .set('method', '18'); // Méthode spécifique pour la Tunisie
+      .set('method', '18'); 
 
-    // Envoi de la requête HTTP GET avec les paramètres
+   
     return this.http.get(this.apiUrl, { params });
   }
 }

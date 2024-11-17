@@ -8,7 +8,7 @@
   
   .ring {
     position: relative;
-    width: 220px; /* Ajusté pour une meilleure apparence */
+    width: 220px; 
     height: 300px;
     background-color: #F0C052;
     border-radius: 50px;
@@ -24,7 +24,7 @@
   }
   
   input[type="text"] {
-    width: 120px; /* Largeur plus grande */
+    width: 120px; 
     text-align: center;
     font-size: 1.5em;
     border: 1px solid #ccc;
@@ -37,15 +37,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px; /* Espacement entre les boutons */
-    margin-top: 20px; /* Ajusté pour espacement */
+    gap: 30px; 
+    margin-top: 20px; 
   }
   
   .reset-button {
     background-color: rgb(0, 0, 0);
     border: none;
     border-radius: 50%;
-    width: 40px; /* Plus petit bouton pour Reset */
+    width: 40px; 
     height: 40px;
     font-size: 0.8em;
     cursor: pointer;
@@ -59,7 +59,7 @@
     background-color: rgb(0, 0, 0);
     border: none;
     border-radius: 50%;
-    width: 100px; /* Plus grand bouton pour Count */
+    width: 100px; 
     height: 100px;
     font-size: 3em;
     cursor: pointer;
