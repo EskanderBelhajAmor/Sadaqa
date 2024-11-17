@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .ring {
+    position: relative;
+    width: 220px; /* Ajusté pour une meilleure apparence */
+    height: 300px;
+    background-color: #F0C052;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .display {
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    width: 120px; /* Largeur plus grande */
+    text-align: center;
+    font-size: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #fff;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Espacement entre les boutons */
+    margin-top: 20px; /* Ajusté pour espacement */
+  }
+  
+  .reset-button {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50%;
+    width: 40px; /* Plus petit bouton pour Reset */
+    height: 40px;
+    font-size: 0.8em;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .count-button {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50%;
+    width: 100px; /* Plus grand bouton pour Count */
+    height: 100px;
+    font-size: 3em;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .reset-button:hover, .count-button:hover {
+    background-color: darkgray;
+  }
+  
