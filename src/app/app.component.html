@@ -1,33 +1,41 @@
-
-      <div class="container-fluid fixed-top">
-          <div class="container topbar d-none d-lg-block">
-              <div class="topbar-inner" style="direction: rtl; text-align: center;">
-بسم الله الرحمان الرحيم
-              </div>
-          </div>
-          <div class="container">
-              <nav class="navbar navbar-light navbar-expand-lg py-3">
-                  <a href="index.html" class="navbar-brand">
-                      <h1 class="mb-0"><span class="text-primary" >Sadaqa</span> </h1>
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                      <span class="fa fa-bars text-primary"></span>
-                  </button>
-                  <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-
-                      <div class="navbar-nav ms-lg-auto mx-xl-auto">
-                        <a class="nav-item nav-link" [routerLink]="['/ihdaa']">اهداء</a>
-                        <a class="nav-item nav-link"[routerLink]="['/tasbih']">تسبيح</a>
-                        <a class="nav-item nav-link"[routerLink]="['/sonnah']">السنة النبوية</a>
-                        <a class="nav-item nav-link" [routerLink]="['/reciters']">القران الكريم</a>
-                        <a class="nav-item nav-link" [routerLink]="['/salat']">مواقيت الصلاة</a>
-                        <a class="nav-item nav-link active" [routerLink]="['/accueil']">الاستقبال</a>
-                      </div>
-                     
-                  </div>
-              </nav>
-          </div>
+<div class="container-fluid fixed-top">
+  <div class="container topbar d-none d-lg-block">
+    <div class="topbar-inner" style="direction: rtl; text-align: center;">
+      بسم الله الرحمان الرحيم
+    </div>
+  </div>
+  <div class="container">
+    <nav class="navbar navbar-light navbar-expand-lg py-3">
+      <a href="index.html" class="navbar-brand">
+        <h1 class="mb-0"><span class="text-primary">Sadaqa</span></h1>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+        (click)="isMenuOpen = !isMenuOpen"
+      >
+        <span class="fa fa-bars text-primary"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse bg-white"
+        id="navbarCollapse"
+        [ngClass]="{ 'show': isMenuOpen }"
+      >
+        <div class="navbar-nav ms-lg-auto mx-xl-auto" (click)="closeMenu()">
+          <a class="nav-item nav-link" [routerLink]="['/ihdaa']">اهداء</a>
+          <a class="nav-item nav-link" [routerLink]="['/tasbih']">تسبيح</a>
+          <a class="nav-item nav-link" [routerLink]="['/sonnah']">السنة النبوية</a>
+          <a class="nav-item nav-link" [routerLink]="['/reciters']">القران الكريم</a>
+          <a class="nav-item nav-link" [routerLink]="['/salat']">مواقيت الصلاة</a>
+          <a class="nav-item nav-link" [routerLink]="['/accueil']">الاستقبال</a>
+        </div>
       </div>
+    </nav>
+  </div>
+</div>
+
 
 
 
