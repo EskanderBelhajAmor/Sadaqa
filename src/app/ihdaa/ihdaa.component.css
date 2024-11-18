@@ -1,11 +1,11 @@
 .container {
   display: flex;
   justify-content: center;
-  align-items: center; /* Centrer verticalement */
+  align-items: center; 
   height: 100vh;
   background-color: #ffffff;
-  padding: 20px; /* Réduit la marge pour éviter des débordements */
-  box-sizing: border-box; /* Assure une bonne gestion des marges/paddings */
+  padding: 20px; 
+  box-sizing: border-box; 
 }
 
 .acknowledgment {
@@ -14,22 +14,22 @@
   font-family: 'Arial', sans-serif;
   font-size: 1.2em;
   line-height: 1.6;
-  margin: 10px; /* Réduit la marge pour petits écrans */
+  margin: 10px; 
   padding: 15px;
   border: 2px solid #ccc;
   border-radius: 10px;
   background-color: #f9f9f9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 800px; /* Limite la largeur du contenu */
-  width: 100%; /* S'adapte au conteneur */
+  max-width: 800px; 
+  width: 100%; 
 }
 @media (max-width: 768px) {
   .acknowledgment {
-      font-size: 1em; /* Réduit la taille de la police */
+      font-size: 1em;
       padding: 10px;
   }
 
   .container {
-      padding: 10px; /* Réduit le padding global */
+      padding: 10px; 
   }
 }
