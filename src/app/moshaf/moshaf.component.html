@@ -1,0 +1,46 @@
+<div class="container-fluid hero-header">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-15">
+              <div class="hero-header-inner animated zoomIn">
+                  <p class="fs-4 text-dark" style="direction: rtl; text-align: center; ">بسم الله الرحمان الرحيم</p>
+                  <h1 class="display-1 mb-5 text-dark" style="font-size: 3.5rem; direction: rtl; text-align: center;">" كِتَابٌ أَنْزَلْنَاهُ إِلَيْكَ مُبَارَكٌ لِيَدَّبَّرُوا آيَاتِهِ وَلِيَتَذَكَّرَ أُوْلُوا الْأَلْبَابِ"</h1>
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="quran-container">
+  <h1 class="quran-title">القــــــــرآن الكريــــــــم</h1>
+
+  <!-- Sélection de la sourate -->
+  <div class="select-container">
+    <label for="surahSelect" class="select-label"></label>
+    <select
+      id="surahSelect"
+      (change)="onSurahSelect($event); scrollToTop()"
+      class="surah-select"
+    >
+      <option value="" disabled selected>اختر السورة</option> <!-- Option vide par défaut -->
+      <option *ngFor="let surah of surahs" [value]="surah.number">
+        {{ surah.name }}
+      </option>
+    </select>
+  </div>
+
+  <!-- Affichage de la sourate sélectionnée -->
+  <div *ngIf="selectedSurah" class="surah-card" id="surahContainer">
+    <h2 class="surah-title">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِیمِ</h2>
+
+    <!-- Liste des ayahs -->
+    <div class="ayah-container">
+      <div *ngFor="let aya of ayahs" class="ayah-item">
+        <p class="ayah-text">
+          {{ aya.text }}
+          <span class="ayah-number">{{ aya.number }}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -6,6 +6,7 @@ import { SurahsComponent } from './surahs/surahs.component';
 import { SonnahComponent } from './sonnah/sonnah.component';
 import { TasbihComponent } from './tasbih/tasbih.component';
 import { IhdaaComponent } from './ihdaa/ihdaa.component';
+import { MoshafComponent } from './moshaf/moshaf.component';
 export const routes: Routes = [
     { path: '', redirectTo: '/accueil', pathMatch: 'full' },
 {path:'salat' , component: SalatComponent},
@@ -14,7 +15,8 @@ export const routes: Routes = [
 { path: 'surahs/:reciterId', component: SurahsComponent },
 {path:'sonnah' , component: SonnahComponent},
 {path:'tasbih' , component: TasbihComponent},
-{path:'ihdaa' , component: IhdaaComponent}
+{path:'ihdaa' , component: IhdaaComponent},
+{path:'moshaf' , component: MoshafComponent}
 
 
 

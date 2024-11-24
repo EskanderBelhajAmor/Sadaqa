@@ -1,0 +1,103 @@
+/* Conteneur principal */
+.quran-container {
+  font-family: 'Amiri', serif; /* Police calligraphique */
+  background-color: #fafafa; /* Couleur douce pour le fond */
+  border: 2px solid #ddd; /* Bordures simples */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+  direction: rtl; /* Texte de droite à gauche */
+  text-align: justify; /* Alignement justifié comme un Mushaf */
+  line-height: 2.2; /* Espacement entre les lignes */
+}
+
+/* Titre principal */
+.quran-title {
+  text-align: center;
+  color: #F0C052; /* Vert foncé, élégant */
+  margin-bottom: 20px;
+  font-size: 2.8em; /* Titre large */
+  font-weight: bold;
+}
+
+/* Conteneur pour le select */
+.select-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.select-label {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.surah-select {
+  font-size: 1.3em;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+/* Carte pour afficher la sourate */
+.surah-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* Titre de la sourate */
+.surah-title {
+  text-align: center;
+  color: #2e7d32; /* Rouge foncé */
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+/* Conteneur des ayahs */
+.ayah-container {
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* Ayah individuelle */
+.ayah-item {
+  margin-bottom: 20px;
+}
+
+.ayah-text {
+  font-size: 1.8em; /* Texte clair et grand */
+  color: #212121; /* Noir classique */
+  font-weight: normal;
+  background-color: #f8f8f8;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  white-space: normal;
+  line-height: 2.5;
+}
+
+/* Numéro des ayahs */
+.ayah-number {
+  display: inline-block;
+  font-size: 0.8em; /* Taille adaptée pour les grands nombres */
+  color: #fff;
+  background-color: #2e7d32; /* Vert foncé élégant */
+  width: 50px; /* Taille fixe pour les cercles */
+  height: 50px; /* Taille fixe pour les cercles */
+  line-height: 50px; /* Centrer le texte verticalement */
+  text-align: center; /* Centrer horizontalement */
+  border-radius: 50%; /* Rond parfait */
+  margin-left: 10px;
+  font-weight: bold;
+  overflow: hidden; /* Empêche le dépassement */
+  box-sizing: border-box; /* Empêche l'augmentation de taille due à la bordure */
+}
+
+
+
