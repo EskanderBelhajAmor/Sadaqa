@@ -7,13 +7,13 @@ import { Observable } from 'rxjs';
 })
 export class MoshafService {
 
-  private baseUrl = 'http://api.alquran.cloud/v1/surah/';  // L'URL de l'API
+  private baseUrl = 'https://api.alquran.cloud/v1/surah/';  // L'URL de l'API
 
   constructor(private http: HttpClient) { }
 
   // Récupérer la liste des sourates
   getSurahs(): Observable<any> {
-    return this.http.get<any>('http://api.alquran.cloud/v1/surah');
+    return this.http.get<any>('https://api.alquran.cloud/v1/surah');
   }
 
   // Récupérer les ayahs d'une sourate
